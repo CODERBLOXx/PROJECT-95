@@ -26,3 +26,9 @@ document.getElementById("user_name").innerHTML = "Welcome " + user_name + "!";
    //End code
    });});}
 getData();
+
+function logout(){
+   localStorage.removeItem("username");
+   localStorage.removeItem("room_name");
+   window.location = "index.html";
+}
